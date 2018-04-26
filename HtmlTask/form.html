@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            label.Main
+            {
+                width: 150px;
+                display: inline-block;
+            }
+        
+        </style>
+    <meta charset="UTF-8" />
+    </head>
+    <body>
+        
+        
+        <form action="success.html">
+  
+            <fieldset>
+                <legend>User specification</legend>
+            <p> 
+                <label class="Main" for="name">Enter your name:</label>
+                <input id="name" type="text" name="name" placeholder="Your name?" autofocus required>
+            </p>
+            
+            <p>
+                <label class="Main" for="second name">Enter your second name:</label>
+                <input id="second name" type="text" name="second name" placeholder="Your second name?" autofocus required>
+            </p>
+            
+            <p>
+                <label class="Main" for="email">Enter your email adress:</label>
+                <input id="email" type="email" placeholder="Your email adress?" autofocus required>
+            </p>
+            
+            <p>
+                <label class="Main" for="date">Enter your birth date:</label>
+                <input id="date" type="date" autofocus required>
+            </p>
+            
+            <p>
+                <label class="Main" for="tel">Enter your telephone number:</label>
+                <input id="tel" type="tel" autofocus>
+            </p>
+            
+            <p>
+                <label class="Main" >Sex:</label>
+                <select name="gender" id="gender" autofocus>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            
+            </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>User skills</legend>
+            <p>
+                <label>Type of employee:
+                <input type="radio" name="type" autofocus>Automation testing
+                <input type="radio" name="type">Java development
+                <input type="radio" name="type">JavaScript development
+                </label>
+            </p>
+            </fieldset>
+            
+            
+            <fieldset>
+                <legend>Email filter</legend>
+            <p>
+                <label>Recive messages type:
+                <input type="radio" name="letters" autofocus>All
+                <input type="radio" name="letters">Company news
+                <input type="radio" name="letters">New vacancies
+                </label>
+            </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Resume</legend>
+            <p>
+                <lable for="resume">Enter your resume file:</lable>
+                <input id="resume" type="file" name="file" multiple autofocus>
+            
+            </p>
+            
+            
+            <p>
+                <lable for="info">Enter some info about yourself below:</lable>
+            </p>
+            
+            <p>
+                <textarea id="info" rows="5" cols="30" name="text" autofocus></textarea>
+            </p>
+            </fieldset>
+            
+            <input type="submit" name="Submit" value="Submit">
+            <input type="hidden" name="redirect" value="success.html">
+            <input type="reset" name="Submit2" value="Reset">
+        </form>
+ </body>
+</html>
