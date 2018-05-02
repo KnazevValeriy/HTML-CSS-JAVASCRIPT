@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Homework</title>
+    <script src="test.js" type="text/javascript"></script>
+    <link href="Style.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>Part one</h1>
+<fieldset>
+    <legend>First task</legend>
+    <p>
+        <strong>Написати функцію, яка скорочує строку і додає три крапки </strong>
+    </p>
+    <p>
+    <p>
+        <label class="Main" for="string1">Enter your string:</label>
+        <input id="string1" type="text">
+    </p>
+    <p>
+        <label class="Main" for="string1">Enter max length of your string:</label>
+        <input id="int1" type="number">
+    </p>
+    </p>
+    <div>
+        <button onclick="taskOne()">Solution</button>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Second task</legend>
+    <p>
+        <strong>Знайти кількість букв "а" в речені "<em>Назва Львів дана місту на честь князя Лева Даниловича, сина
+            засновника Львова Данила Галицького.</em>" використовуючи indexOf
+        </strong>
+    </p>
+    <div>
+        <button onclick="taskTwo()">Solution</button>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend>Third task</legend>
+    <p>
+        <strong>Написати функцію, яка буде фільтрувати рядок і видиляти слова "xxxx" i "polityka"</strong>
+    </p>
+    <p>
+        <label class="Main" for="string1">Enter your string:</label>
+        <input id="string2" type="text"><br>
+    </p>
+    <div>
+        <button onclick="taskThree()">Solution</button>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend>Fourth task</legend>
+    <p>
+        <strong>Профільтрувати строку "іва 24 уц ац34434ауку" і виветси тільки цифри</strong>
+    </p>
+    <div>
+        <button onclick="taskFourth()">Solution</button>
+    </div>
+</fieldset>
+<h1>Part two</h1>
+
+<fieldset>
+    <legend>Array task</legend>
+    <p>
+        <strong>Array: var testArray = [1,2435,544,4545, 4, 6, 7 ,23];</strong>
+    </p>
+
+    <div>
+        <label class="ArrayTask" for="button1"><strong>Напишіть функцію, яка буде вертати масив з подвоєними значенями, використовуючи метод map()</strong>
+        </label>
+        <button id="button1" onclick="arrayTaskOne()">Solution</button>
+    </div>
+    <div>
+        <label class="ArrayTask" for="button2"><strong>Напишіть функцію, яка буде вертати масив з непарними елементами, використовуючи метод filter()</strong>
+        </label>
+        <button id="button2" onclick="arrayTaskTwo()">Solution</button>
+    </div>
+    <div>
+        <label class="ArrayTask" for="button3"><strong>Напишіть функцію, яка буде вертати середнє арифметичне елментів масиву, використовуючи метод reduce()</strong>
+        </label>
+        <button id="button3" onclick="arrayTaskThree()">Solution</button>
+    </div>
+</fieldset>
+
+<h1>Part three</h1>
+
+<fieldset>
+    <legend>Special task</legend>
+    <p>
+        <strong>Написати функцію, яка буде виводити символи (включаючи пробыли, цифри) які повторюются в строці</strong>
+    </p>
+
+    <div>
+        <label class="SpecialTask" for="string3"> </label>
+        <input id="string3" type="text">
+        <button id="button4" onclick="specialTask()">Solution</button>
+    </div>
+</body>
+</html>
