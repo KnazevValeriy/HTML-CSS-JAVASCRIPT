@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JS Homework 2: querySelector, date, timeout</title>
+ </head>
+<body>
+<!-- Task 2  -->
+  <h1>World time</h1>
+  <ul>
+    <li data-location="london">London - <span class="time">null</span></li>
+    <li data-location="kiev">Kiev - <span class="time">null</span></li>
+    <li data-location="warshawa">Warshawa - <span class="time">null</span></li>
+    <li data-location="los angeles">Los Angeles - <span class="time">null</span></li>
+    <li data-location="new york">New York - <span class="time">null</span></li>
+  </ul>
+
+<script>
+ var difference = {
+        'London': 2,
+        'Kiev': 0,
+        'Warshawa': 1,
+        'Los_Angeles': 10,
+        'New_York': 7
+    }
+function formatDate(date, difference) {
+
+  var dd = date.getDate();
+  if (dd < 10) dd = '0' + dd;
+
+  var mm = date.getMonth() + 1;
+  if (mm < 10) mm = '0' + mm;
+
+  var yy = date.getFullYear();
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  hours-=difference;
+  if(hours<0){
+	  hours = 24-difference;
+	  dd=dd-1
+  }
+  return dd + '.' + mm + '.' + yy + ' - ' + hours + ':' + minutes;
+}
+var date = new Date();
+alert (date.getHours());
+        document.getElementsByClassName("time")[0].innerText = formatDate(date,difference['London']);
+		document.getElementsByClassName("time")[1].innerText = formatDate(date,difference['Kiev']);
+		document.getElementsByClassName("time")[2].innerText = formatDate(date,difference['Warshawa']);
+		document.getElementsByClassName("time")[3].innerText = formatDate(date,difference['Los_Angeles']);
+		document.getElementsByClassName("time")[4].innerText = formatDate(date,difference['New_York']);
+	
+	
+  // вивести для кожного міста час і дату
+  // формат 24.09.2017 - 15:40
+</script>
+</body>
+</html>
